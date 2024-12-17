@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+
+<html lang="ro">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@300..700&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="author" content="Maria Martin">
+    <meta name="keywords" content="festival,muzică,Sparkle,Cluj">
+    <meta name="description"
+        content="Sparkle pop festival aduce artiști renumiți și atmosferă electrizantă la Cluj în 2025.">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+
+    <title> Sparkle Festival Cluj 2025 </title>
+
+    <style>
+        .navbar {
+            background-color: rgb(192, 196, 207);
+        }
+
+
+        .navbar-brand img {
+            max-height: 40px;
+            border-radius: 8px;
+        }
+
+        .nav-link:hover {
+            color: rgb(76, 153, 230);
+        }
+
+        .carousel {
+            width: 100%;
+            max-width: 1100px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .carousel img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: 5%;
+        }
+
+        body {
+            padding: 30px;
+        }
+
+        .carduri {
+            font-size: 30px;
+            color: rgb(76, 153, 230);
+        }
+
+        .space-grotesk {
+            font-family: "Space Grotesk", sans-serif;
+            font-style: normal;
+        }
+
+        h1 {
+            padding: 30px;
+            font-family: "Tinos", serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        h2,
+        h3 {
+            padding: 20px;
+            color: rgb(87, 87, 87)
+        }
+
+        .card {
+            padding: 20px;
+            background-color: rgb(192, 196, 207);
+        }
+
+        .card h2 {
+            font-size: 25px;
+        }
+        .program{
+           color: rgb(76, 153, 230);
+           font-size: 30px;
+        }
+
+        .badge {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            font-size: 14px
+        }
+
+        .btn-custom {
+            background-color: rgb(192, 196, 207);
+            color: white;
+        }
+
+        .btn-custom:hover {
+            background-color: #9C9EA4;
+            color: black;
+        }
+
+
+
+        .ultimul-paragraf {
+            margin-bottom: 40px;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 20px;
+
+        }
+
+        .section {
+            min-width: 250px;
+            background-color: rgb(192, 196, 207);
+            padding: 20px;
+            border-radius: 8px;
+
+        }
+
+        footer {
+            padding: 30px 0;
+            position: relative;
+            background-color: rgb(192, 196, 207);
+            color: black;
+
+        }
+
+        footer .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        footer .col-md-4 {
+            flex: 1;
+            text-align: center;
+        }
+
+        footer .col-md-4 a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer .social-icons a {
+            font-size: 24px;
+            margin: 0 10px;
+        }
+
+        footer .social-icons a:hover {
+            color: #8dbef1;
+        }
+
+        footer .text-center p {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body class="bg-primary-subtle">
+    <header>
+
+        <nav class="navbar navbar-expand-lg fixed-top ">
+            <div class="container-fluid">
+                <a class="navbar-brand icon-link-hover" style="--bs-link-hover-color-rgb: 25, 135, 84;" href="#home">
+                    <img src="logo.jpg" class="img-fluid" alt="logo cu numele festivalului">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="navbarNav" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#despre-noi">Despre noi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#abonamente">Abonamente</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#locatie">Locație</a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#bilete">Bilete</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <h1 class="text-center fw-bold" id="home">Sparkle Festival 2025</h1>
+
+
+
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+
+                <img src="audience2.jpg" class="img-fluid" alt="lumini colorate și mulți oameni în fața scenii">
+            </div>
+            <div class="carousel-item">
+                <img src="pexels-photo-976866.jpeg" class="img-fluid " alt="oameni cu mâinile în aer la concert">
+            </div>
+            <div class="carousel-item">
+                <img src="audience4.jpg" class="img-fluid" alt="oameni cu mâinile în aer în fața scenii">
+            </div>
+            <div class="carousel-item">
+                <img src="musician--1.jpg" class="img-fluid" alt="artist pe scenă cu microfon în mână">
+            </div>
+            <div class="carousel-item">
+                <img src="artist-band1.jpg" class="img-fluid" alt="artist pe scenă cu chitară în mână">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <h2 id="despre-noi" class="text-center">Cine suntem noi? </h2>
+
+    <p>
+        Plonjează într-o lume de vibrații electrizante și ritmuri captivante la Sparkle Festival 2025! Transformăm
+        Parcul
+        Central din Cluj-Napoca într-un paradis muzical unde magia și melodiile se împletesc pentru a crea experiențe de
+        neuitat.
+        Vino să te bucuri de patru zile de muzică live, cu artiști internaționali și locali care vor urca pe scena
+        noastră
+        spectaculoasă, aducând hituri și melodii noi care vor face inima să îți bată în ritmul tobelor. Fiecare zi este
+        încărcată cu momente surprinzătoare, ateliere interactive, proiecții de videoclipuri și after-party-uri
+        exclusive
+        care vor transforma noaptea în zi.
+        Rezervă-ți biletul acum și asigură-te că faci parte din acest eveniment incredibil!
+
+    </p>
+
+
+
+
+    <h2 id="abonamente" class="text-center"> Abonamente</h2>
+
+    <div class="d-flex flex-wrap justify-content-center gap-5">
+        <div class="card" style="width:18rem;">
+            <img src="audience.jpg" class="card-img-top" alt="Oameni la festival cu mâinile în aer">
+            <div class="card-body">
+                <h3 class="carduri text-center">Basic</h3>
+                <hr>
+                <p class="card-text">La prețul de doar 350 de lei poți achiziționa abonamentul basic.Acesta include
+                    accesul la toate scenele, pentru toate cele 3 zile.</p>
+                <span class="badge bg-success">Disponibil</span>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="audience5.jpg" class="card-img-top" alt="Lumini colorate în fața unei scene mari la festival">
+            <div class="card-body">
+                <h3 class=" carduri text-center">Premium</h3>
+                <hr>
+                <p class="card-text">Acces pentru toate cele 3 zile, cu locuri rezervate pe randurile 5-10, la numai 580
+                    de lei.</p>
+                <span class="badge bg-success">Disponibil</span>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="festival-2.jpg" class="card-img-top "
+                alt="Bucăți colorate de hârtie ca și confetti la festival peste mulțimea de oameni">
+            <div class="card-body">
+                <h3 class=" carduri text-center">All-inclusive</h3>
+                <hr>
+                <p class="card-text">Cu doar 1900 de lei, ai cces la VIP parties, locuri rezervate pe primele 5 randuri,
+                    meet&greet cu vedetele și bauturi gratis</p>
+                <span class="badge bg-danger">Au mai ramas doar 10</span>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+
+
+
+    <h2 class="text-center">De ce să alegi Sparkle festival?</h2>
+    <p> Alege <strong>festivalul Sparkle </strong>din <strong>Cluj în 2025 </strong> pentru un eveniment memorabil, plin
+        de energie și magie. Imaginează-ți un weekend întreg dedicat muzicii pop, cu scene vibrante, lumini
+        spectaculoase și artiști de top care vor electriza publicul. Alătură-te mii de fani din întreaga lume pentru a
+        te bucura de cele mai tari hituri și de spectacole live impresionante. Festivalul nu înseamnă doar muzică; te
+        așteaptă o multitudine de activități, de la zone de relaxare, ateliere interactive și expoziții, până la
+        oportunități unice de a cunoaște alți iubitori de muzică. Asigură-ți biletele acum și pregătește-te pentru cea
+        mai intensă experiență a anului, unde fiecare moment va fi magic și plin de emoție. Sparkle Festival 2025 –
+        locul unde visele devin realitate!</p>
+
+    <hr>
+
+
+
+    <h2 id="locatie" class="text-center">Unde ne gasești?</h2>
+
+    <p> Ne întalnim în <a href="https://ro.wikipedia.org/wiki/Parcul_Central_din_Cluj-Napoca" target="_blank"> Parcul
+            Central din Cluj-Napoca</a>,care este o locație ideală pentru Sparkle Festival 2025 datorită
+        accesibilității, spațiilor verzi ample și atmosferei vibrante. Situat în centrul orașului, aproape de Piața
+        Unirii, parcul oferă atât zone de relaxare, cât și locuri potrivite pentru scenă și activități diverse. Cu
+        infrastructură bună (iluminat, toalete publice), Parcul Central a găzduit anterior evenimente mari și oferă un
+        cadru perfect pentru un festival de amploare.</p>
+    <div class="text-center">
+        <a class="btn btn-primary btn-custom" href="https://maps.app.goo.gl/m7RwwHHhR4NdGh8P6" target="_blank"
+            role="button">Locație</a>
+    </div>
+    <hr>
+
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Ediția 2024</h2>
+        <div class="row">
+
+            <div class="col-12 col-sm-6 col-md-3 mb-4">
+
+                <img src="audience3.jpg" class="card-img-top img-fluid" alt="Oameni cu măinile în aer în fața scenii">
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-md-3 mb-4">
+
+                <img src="festival.jpg" class="card-img-top img-fluid"
+                    alt="Poză de departe cu scena noaptea la festival">
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-md-3 mb-4">
+
+                <img src="festival-3.jpg" class="card-img-top img-fluid"
+                    alt="Trei oameni care stau cu spatele la cameră și cu fața la scenă">
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-md-3 mb-4">
+
+                <img src="pexels-photo-167446.jpeg" class="card-img-top img-fluid"
+                    alt="Bărbat pe scenă cu chitara și microfonul în mână">
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <h2 id="bilete" class="text-center">Achiziționare bilete</h2>
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h3 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Online
+                </button>
+            </h3>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Pentru a achiziționa bilete online pentru Sparkle Festival Cluj 2025, îți recomandăm să vizitezi
+                    platformele de vânzare de bilete recunoscute, cum ar fi <a href="https://www.songkick.com"
+                        target="_blank"> Songkick</a> sau <a href="https://cluj.com" target="_blank">Cluj.com. </a>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Fizic
+                </button>
+            </h3>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Poți achiziționa bilete fizice pentru Sparkle Festival Cluj 2025 de la următoarele locații din
+                    Cluj-Napoca:
+
+                    <strong>Cărturești </strong>(Librărie): Un punct popular de vânzare a biletelor pentru evenimente
+                    culturale și
+                    festivaluri.
+                    <strong>Iulius Mall </strong>(Standuri special amenajate):Un centru comercial unde adesea sunt
+                    instalate
+                    standuri
+                    de vânzare a biletelor pentru diverse evenimente.
+                    <strong>Oficiul de Turism </strong>(Central Cluj): Lângă Piața Unirii, acest oficiu adesea vinde
+                    bilete
+                    pentru
+                    evenimente importante din oraș.
+                    <strong>Cinema Florin Piersic </strong>(Casierie): Pe lângă proiecțiile de filme, casieria vinde
+                    uneori
+                    bilete
+                    pentru evenimente culturale și festivaluri.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <hr>
+
+    <h2 class="text-center">
+        Uite câteva lucruri pe care sa le ai în vedere:
+    </h2>
+    <p class="ultimul-paragraf">
+        Pentru Sparkle Festival 2025 din Cluj-Napoca, asigură-te că ai <strong>biletele fizice sau digitale</strong> și
+        îmbrăcăminte confortabilă, inclusiv haine lejere și pantofi comozi. Nu uita protecția solară, pălăria, ochelarii
+        de soare și crema de protecție solară. Este util să ai o borsetă sau un rucsac mic pentru obiectele de valoare
+        și o <em>sticlă de apă reutilizabilă </em>pentru a te hidrata. <em>Gustările </em>sunt esențiale pentru a face
+        față pauzelor lungi, iar o pătură îți va oferi un loc de relaxare. Asigură-te că ai o <em>baterie externă
+        </em>pentru telefon și un steag sau banner personalizat pentru a-ți găsi prietenii ușor. Sper să te bucuri din
+        plin de festival
+    </p>
+
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Program</h2>
+        <div class="row">
+            <div class="col-12 col-md-4 mb-4">
+                <div class="section">
+                    <h3 class=" program text-center">Ziua 1</h3>
+                    <ul>
+                        <li>16:00 - 18:00: Deschiderea oficială și accesul publicului
+                        <li>18:00 - 19:00: DJ Johann</li>
+                        <li>19:30 - 21:00: Concert live - Artiști locali</li>
+                        <li> 21:30 - 23:00: Dua Lipa</li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class=" col-12 col-md-4 mb-4">
+                <div class="section">
+                    <h3 class="program text-center">Ziua 2</h3>
+                    <ul>
+                        <li>10:00 - 12:00: Silent disco</li>
+                        <li>14:00 - 16:00: Ateliere de dans și coregrafie</li>
+                        <li>16:30 - 18:00: Sesiune de autografe</li>
+                        <li>20:30 - 22:00: Shawn Mendes</li>
+                        <li>22:30 - 00:00: Party cu DJ Anne</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="section">
+                    <h3 class="program text-center">Ziua 3</h3>
+                    <ul>
+                        <li>12:00 - 14:00: Activități pentru copii și familie</li>
+                        <li>14:30 - 16:00: Concurs de karaoke</li>
+                        <li>20:30 - 22:00: Daddy Yankee</li>
+                        <li>22:30 - 00:00: Noapte albă cu DJ Steven și artificii</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer class=" py-4 mt-5">
+        <div class="container">
+
+            <div class="col-md-4 text-center text-md-start">
+                <p>&copy; 2025 Sparkle Festival. Toate drepturile rezervate.</p>
+            </div>
+
+
+            <div class=" contact col-md-4 text-center">
+                <p>Contact: <a href="mailto:contact@sparklefestival.ro">contact@sparklefestival.ro</a></p>
+                <p>Telefon: <a href="tel:0682.738.278">0682.738.278</a></p>
+            </div>
+
+            <div class="col-md-4 text-center social-icons">
+                <a href="https://www.facebook.com/welovemusicfestival.ro/" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.tiktok.com/discover/one-music-festival" target="_blank">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="https://www.instagram.com/welovemusic.festival/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+
+
+
+</html>
